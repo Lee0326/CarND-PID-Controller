@@ -37,7 +37,7 @@ int main() {
   /**
    *Initialize the pid variable.
    */  
-  pid.Init(0.08, 0.001 , 0.4);
+  pid.Init(0.11, 0.001 , 0.95);
   int cntr = 0;
   h.onMessage([&pid,&cntr](uWS::WebSocket<uWS::SERVER> ws, char *data, size_t length, 
                      uWS::OpCode opCode) {
@@ -73,7 +73,7 @@ int main() {
           cntr += 1;
           // DEBUG
           std::cout << "CTE: " << cte << " Steering Value: " << steer_value << " Counter Number: "<< cntr 
-                    << std::endl;
+                    << " Car's s in Frenet coordinates: " <<std::endl;   
 
 	  
 	  
