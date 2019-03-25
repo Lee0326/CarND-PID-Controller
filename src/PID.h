@@ -32,10 +32,7 @@ class PID {
    */
   double TotalError();
   /**
-   * Calculate the tuned PID coefficients.
-   * @output The updated PID coefficients.
-   */ 
-  void twiddle(double tol);
+
 
  private:
   /**
