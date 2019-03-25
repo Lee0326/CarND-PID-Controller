@@ -3,7 +3,7 @@ Self-Driving Car Engineer Nanodegree Program
 
 ---
 # Tuning Process
-Trail and error method was applied for tuning the Kp, Ki, and Kd coefficients. First I set Ki and Kd values to zero and increase proportional term (Kp) until the system started to oscillate. Then Kd was increased to reduced oscillation and fianlly Ki was tuned to reduce steady-state error.
+Trail and error method was applied for tuning the Kp, Ki, and Kd coefficients by hand. First I set Ki and Kd values to zero and increase proportional term (Kp) until the system started to oscillate. Then Kd was increased to reduced oscillation and fianlly Ki was tuned to reduce steady-state error.
 When the Kp was 0.11 the car started to oscillate, then the Kd was raised up to 0.95 to eliminate the oscillation and Ki was set to 0.001. So the final set of Kp, Ki and Kd coefficients is {0.11,0.001,0.95}.   
 
 ## Dependencies
