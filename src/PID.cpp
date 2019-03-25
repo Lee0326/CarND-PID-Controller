@@ -54,15 +54,5 @@ double PID::TotalError() {
   
 }
 
-void PID::twiddle(double tol) {
-  vector<double> p = {Kp, Ki, Kd};
-  vector<double> dp = {0.1,0.1,0.1};
-  double sum = 0.0;
-  for (int i =0; i < p.size(); i++) {
-    sum += dp[i];
-  }
-  //while ()
 
-  
-}
 
